@@ -1,10 +1,10 @@
 *{
   box-sizing:border-box;
+  color:white;
 }
 
 html{
   font-family: sans-serif;
-  color:white;
 }
 
 body{
@@ -21,37 +21,64 @@ body{
 
 .header__titrepage{
   text-transform: uppercase;
+  font-weight: 0.5;
 }
 
 
 
 
 /* SECTION GARDE */
+.garde{
+  height:80vh;
+  /* background-image: url('../background.jpg'); */
+  position:relative;
+}
+
+.garde__bg{
+  position:absolute;
+  width:100%;
+}
+
 .garde__formcontainer{
-  background-image: url('asset/background.jpg');
-  background-color: grey;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:30vw;
+  background-color: rgba(255,255,255,0.6);
+  margin: auto;
 }
 
 form{
-  width:50vw;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin:8%;
 }
 
 .form__inputs{
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin:10px 0;
 }
 
 .form__gauche{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-
 }
 
-.garde__formcontainer button{
-  width:15%;
+form input, form textarea{
+  margin:5px 0;
+  background-color: #939393;
+  padding:5px;
+}
+
+form button{
+  background-color: #939393;
+  align-self: flex-end;
+  width:25%;
+  padding:5px 0;
+  text-transform: uppercase;
 }
