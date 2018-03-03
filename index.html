@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" defer>
+  <script src="asset/js/script.js" charset="utf-8" defer></script>
 </head>
 
 <!-- convention de nommage BEM : Block__element--modifier -->
@@ -28,13 +30,13 @@
       <form action="POST">
         <div class="form__inputs">
           <div class="form__gauche">
-            <input type="text" placeholder="Nom">
-            <input type="email" placeholder="Mail">
-            <input type="tel" placeholder="Téléphone">
+            <input class="input__nom" type="text" placeholder="Nom">
+            <input class="input__mail" type="email" placeholder="Mail" required>
+            <input class="input__tel" type="tel" placeholder="Téléphone" required>
           </div>
-          <textarea placeholder="Message"></textarea>
+          <textarea class="input__msg" placeholder="Message"></textarea>
         </div>
-        <button type="submit">Envoyer</button>
+        <button type="button">Envoyer</button>
       </form>
     </div>
   </section>
