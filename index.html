@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<!-- convention de nommage BEM : Block__element--modifier -->
+
+<body>
+  <header class="header">
+    <nav class="header__menu">
+      <div class="header__bulkocontainer">
+        <img src="asset/logoBulko.png" alt="" class="header__logobulko">
+      </div>
+      <h1 class="header__titrepage">contact</h1>
+      <div class="header__rsncontainer">
+        <img class="header__rsnlogo" src="asset/reseauxSociaux.png" alt="">
+      </div>
+    </nav>
+  </header>
+  <section class="garde">
+    <!-- genre image/"page" de garde, premier element qu'on voit du site -->
+    <div class="garde__formcontainer">
+      <form action="POST">
+        <div class="form__inputs">
+          <div class="form__gauche">
+            <input type="text">
+            <input type="email">
+            <input type="tel">
+          </div>
+          <textarea>
+
+          </textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
