@@ -9,10 +9,9 @@
   <ul>
     <?php
     if(isset($_POST)){
-      var_dump($_POST);
-      foreach ($_POST as $value) {
+      foreach ($_POST as $key => $value) {
     ?>
-    <li><?php echo $value ?></li>
+    <li><strong><?php echo $key ?> : </strong><?php echo $value ?></li>
     <?php
       }
     }

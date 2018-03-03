@@ -27,14 +27,14 @@
     <img class="garde__bg" src="asset/background.jpg" alt="">
     <!-- genre image/"page" de garde, premier element qu'on voit du site -->
     <div class="garde__formcontainer">
-      <form action="POST">
+      <form action="actioncontact.php" method="POST">
         <div class="form__inputs">
           <div class="form__gauche">
             <input name="nom" class="input__nom" type="text" placeholder="Nom">
             <input name="mail" class="input__mail" type="email" placeholder="Mail" required>
-            <input name="tel" class="input__tel" type="tel" placeholder="Téléphone" required>
+            <input name="telephone" class="input__tel" type="tel" placeholder="Téléphone" required>
           </div>
-          <textarea name="msg" class="input__msg" placeholder="Message"></textarea>
+          <textarea name="message" class="input__msg" placeholder="Message"></textarea>
         </div>
         <button type="button">Envoyer</button>
       </form>
