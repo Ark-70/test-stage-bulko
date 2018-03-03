@@ -8,11 +8,14 @@
 <body>
   <ul>
     <?php
+
     if(isset($_POST)){
       foreach ($_POST as $key => $value) {
     ?>
-    <li><strong><?php echo $key ?> : </strong><?php echo $value ?></li>
+    <li><strong><?php echo $key ?> : </strong><?php echo addslashes($value); ?></li>
     <?php
+
+    // En transformant les values des inputs avec addslashes, les ', ", \, et NUL sont échappés
       }
     }
 
