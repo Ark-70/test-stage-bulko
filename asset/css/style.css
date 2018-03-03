@@ -67,6 +67,8 @@ form{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  width:45%;
+  margin-right: 10px;
 }
 
 form input, form textarea{
@@ -74,6 +76,7 @@ form input, form textarea{
   background-color: #939393;
   padding:5px;
 }
+
 
 form button{
   background-color: #939393;
@@ -99,6 +102,9 @@ form button{
   }
   .garde__formcontainer{
     background-color:#bdbdbd;
+  }
+  .form__gauche{
+    margin:0;
   }
   form button{
     width:45%;

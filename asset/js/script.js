@@ -1,10 +1,9 @@
 $(function(){
 
-  let $nominput = $('.input__nom'),
-    $mailinput = $('.input__mail'),
-    $telinput = $('.input__tel'),
-    $msginput = $('.input__msg'),
-    $btn = $('button');
+  let $mailinput = $('.input__mail'),
+    $telinput = $('.input__tel');
+    // $nominput = $('.input__nom'),
+    // $msginput = $('.input__msg');
 
   function isMailValid(){
     let patternMail = new RegExp("^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$");
@@ -20,9 +19,9 @@ $(function(){
     return patternTel.test(tel);
   }
 
-  $btn.click(function(){
+  $('button').click(function(){
     if(isMailValid() && isTelValid()){
-      
+      $('form').submit();
     }
   });
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Page contact Bulko</title>
   <link rel="stylesheet" href="asset/css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" defer>
   <script src="asset/js/script.js" charset="utf-8" defer></script>
@@ -30,11 +30,11 @@
       <form action="POST">
         <div class="form__inputs">
           <div class="form__gauche">
-            <input class="input__nom" type="text" placeholder="Nom">
-            <input class="input__mail" type="email" placeholder="Mail" required>
-            <input class="input__tel" type="tel" placeholder="Téléphone" required>
+            <input name="nom" class="input__nom" type="text" placeholder="Nom">
+            <input name="mail" class="input__mail" type="email" placeholder="Mail" required>
+            <input name="tel" class="input__tel" type="tel" placeholder="Téléphone" required>
           </div>
-          <textarea class="input__msg" placeholder="Message"></textarea>
+          <textarea name="msg" class="input__msg" placeholder="Message"></textarea>
         </div>
         <button type="button">Envoyer</button>
       </form>
